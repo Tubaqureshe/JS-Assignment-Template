@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+<body>
+<!-- Qno1 
+ -->
+ <!-- Create a signup form and display form data in your web 
+page on submission -->
+
+<!-- <form id="signUp">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+<div id="formData"></div>
+
+<script>
+  var form = document.getElementById('signUp');
+  var formDataElement = document.getElementById('formData');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var formData = "Name: " + name + "<br>" +
+                   "Email: " + email + "<br>" +
+                   "Password: " + password;
+
+    formDataElement.innerHTML = formData;
+  });
+</script> -->
+<!-- Qno2 -->
+<!-- Suppose in your webpage there is content area in which 
+you have entered your item details, but user can only see 
+some details on first look. When user clicks on “Read 
+more” button, full detail of that particular item will be 
+displayed. -->
+
+<!-- <p id="text"><span>Hallo! Sir</span> ipsum dolor, sit amet consectetur adipisicing elit. Error unde impedit commodi veniam eveniet voluptatum.</p>
+<button id="Read-More" >Read-More</button>
+<button id="Hide-More">Hide-More</button>
+<script>
+var text = document.getElementById("text");
+var readMore = document.getElementById("Read-More");
+var hideMore = document.getElementById("Hide-More");
+
+readMore.addEventListener("click", function() {
+  var fontSize = parseInt(window.getComputedStyle(text).fontSize);
+  text.style.fontSize = (fontSize + 10) + "px";
+});
+
+hideMore.addEventListener("click", function() {
+  var fontSize = parseInt(window.getComputedStyle(text).fontSize);
+  text.style.fontSize = (fontSize - 10) + "px";
+}); -->
+
+  
+<!-- </script> -->
+ 
+<!-- Qno3 -->
+<!-- HTML code -->
+<!-- <form id="studentForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" required>
+  <br>
+  <label for="age">Age:</label>
+  <input type="number" id="age" required>
+  <br>
+  <label for="grade">Grade:</label>
+  <input type="text" id="grade" required>
+  <br>
+  <button type="submit">Add Student</button>
+</form>
+
+<table id="studentTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Grade</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script>
+  var studentForm = document.getElementById('studentForm');
+  var studentTable = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+  
+  studentForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var age = document.getElementById('age').value;
+    var grade = document.getElementById('grade').value;
+    
+    var row = studentTable.insertRow();
+    var nameCell = row.insertCell();
+    var ageCell = row.insertCell();
+    var gradeCell = row.insertCell();
+    var actionsCell = row.insertCell();
+    
+    nameCell.textContent = name;
+    ageCell.textContent = age;
+    gradeCell.textContent = grade;
+    actionsCell.innerHTML = '<button class="editButton">Edit</button> <button class="deleteButton">Delete</button>';
+    
+    document.getElementById('name').value = '';
+    document.getElementById('age').value = '';
+    document.getElementById('grade').value = '';
+  });
+  
+  studentTable.addEventListener('click', function(event) {
+    if (event.target.classList.contains('deleteButton')) {
+      var row = event.target.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    } else if (event.target.classList.contains('editButton')) {
+      var row = event.target.parentNode.parentNode;
+      var name = row.cells[0].textContent;
+      var age = row.cells[1].textContent;
+      var grade = row.cells[2].textContent;
+      
+      document.getElementById('name').value = name;
+      document.getElementById('age').value = age;
+      document.getElementById('grade').value = grade;
+    }
+  });
+</script> -->
+
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>
